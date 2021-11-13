@@ -7,13 +7,14 @@ public class Product {
    private int price;
    private List<Category> listProduct = new ArrayList<>();
 
-    public Product(int id, String newName, int newMoney, String category) {
-    }
-
-    public Product() {
+    public Product(int id, String name, int price, List<Category> listProduct) {
+        this.id = id;
         this.name = name;
         this.price = price;
         this.listProduct = listProduct;
+    }
+
+    public Product() {
     }
 
     public int getId() {

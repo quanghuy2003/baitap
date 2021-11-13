@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class ProductManage implements Interface<Product> {
-    private ArrayList<Product> listProduct;
-    int id = -1;
+    private ArrayList<Product> listProduct = new ArrayList<>();
+//    int id = -1;
 
     public ProductManage(ArrayList<Product> listProduct) {
         this.listProduct = listProduct;
@@ -22,9 +22,9 @@ public class ProductManage implements Interface<Product> {
 
     @Override
     public void add(Product product) {
-        id++;
+//        id++;
         listProduct.add(product);
-        getListProduct().get(id).setId(id);
+//        getListProduct().get(id).setId(id);
     }
 
 
@@ -44,8 +44,8 @@ public class ProductManage implements Interface<Product> {
 
     @Override
     public void display() {
-        for (int i = 0; i < listProduct.size(); i++) {
-            System.out.println(this.listProduct.get(i));
+        for (Product product : listProduct) {
+            System.out.println(product);
         }
     }
 

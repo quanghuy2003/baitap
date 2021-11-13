@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class CategoryManage implements Interface<Category> {
-    private ArrayList<Category> listCategory;
+    private ArrayList<Category> listCategory ;
 
     public CategoryManage() {
         listCategory = new ArrayList<>();
